@@ -1,0 +1,22 @@
+doctype 5
+html(lang="en")
+    head
+        title Mover Login
+        link(rel="stylesheet" type="text/css" href="/stylesheets/login.css")
+    body
+        form(action="login",method="post")
+            div#title User Login
+            hr
+            table
+                tr
+                    td#label Username
+                    td
+                        input(type='text', name='username')
+                    td#error #{error}
+                tr
+                    td#label Password
+                    td
+                        input(type='password', name='password')
+                    td
+            br
+            input(type='submit', value='Login')

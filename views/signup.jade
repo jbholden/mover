@@ -1,0 +1,28 @@
+doctype 5
+html(lang="en")
+    head
+        title Mover Signup
+        link(rel="stylesheet" type="text/css" href="/stylesheets/login.css")
+    body
+        form(action="signup",method="post")
+            div#title User Signup
+            hr
+            table
+                tr
+                    td#label Username
+                    td
+                        - var name = user_name == null? "" : user_name
+                        input(type='text', name='username', value="#{name}")
+                    td#error #{user_error}
+                tr
+                    td#label Password
+                    td
+                        input(type='password', name='password')
+                    td#error #{password_error}
+                tr
+                    td#label Verify Password
+                    td
+                        input(type='password', name='verify')
+                    td
+            br
+            input(type='submit', value='Signup')

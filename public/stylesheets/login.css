@@ -1,0 +1,21 @@
+body {
+    font-family: Helvetica;
+    font-weight: 100;
+    color: black;
+}
+input {
+    font-size: 12pt; 
+}
+#title {
+    color: blue;
+    font-size: 16pt; 
+}
+#error {
+    color: red;
+    background-color: white;
+    padding: 0px 8px;
+}
+#label {
+    font-size: 12pt; 
+}
+
